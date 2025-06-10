@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Transformer Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TEXT TRANSFORMER PRO</h1>
+            <p class="subtitle">Transform your text in multiple ways with our powerful text manipulation tools</p>
+        </header>
+
+        <div class="main-content">
+            <div class="input-section">
+                <div class="section-header">
+                    <h2>PASTE YOUR TEXT HERE</h2>
+                    <button class="btn" id="clearBtn"><i class="fas fa-broom"></i> Clear</button>
+                </div>
+                <textarea id="inputText" placeholder="Type or paste your text here..."></textarea>
+                <div class="counter">
+                    <span id="charCount">Characters: 0</span>
+                    <span id="wordCount">Words: 0</span>
+                    <span id="lineCount">Lines: 0</span>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <div class="section-header">
+                    <h2>YOUR CONVERTED TEXT</h2>
+                    <button class="btn" id="copyBtn"><i class="fas fa-copy"></i> Copy</button>
+                </div>
+                <div class="output-text" id="outputText">Your transformed text will appear here...</div>
+                <div class="counter">
+                    <span id="outputCharCount">Characters: 0</span>
+                    <span id="outputWordCount">Words: 0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card" data-transform="uppercase">
+                <div class="feature-icon">
+                    <i class="fas fa-text-height"></i>
+                </div>
+                <h3 class="feature-title">ALL CAPS</h3>
+                <p class="feature-desc">Convert all text to uppercase letters</p>
+            </div>
+
+            <div class="feature-card" data-transform="titlecase">
+                <div class="feature-icon">
+                    <i class="fas fa-text-width"></i>
+                </div>
+                <h3 class="feature-title">FIRST LETTER CAPS</h3>
+                <p class="feature-desc">Capitalize the first letter of each word</p>
+            </div>
+
+            <div class="feature-card" data-transform="lowercase">
+                <div class="feature-icon">
+                    <i class="fas fa-font"></i>
+                </div>
+                <h3 class="feature-title">NO CAPS</h3>
+                <p class="feature-desc">Convert all text to lowercase letters</p>
+            </div>
+
+            <div class="feature-card" data-transform="randomcase">
+                <div class="feature-icon">
+                    <i class="fas fa-random"></i>
+                </div>
+                <h3 class="feature-title">RANDOM CAPS</h3>
+                <p class="feature-desc">Randomly capitalize letters throughout the text</p>
+            </div>
+
+            <div class="feature-card" data-transform="sentencecase">
+                <div class="feature-icon">
+                    <i class="fas fa-spell-check"></i>
+                </div>
+                <h3 class="feature-title">CORRECT PUNCTUATION AND CAPS</h3>
+                <p class="feature-desc">Fix capitalization and punctuation errors</p>
+            </div>
+
+            <div class="feature-card" data-transform="invertcase">
+                <div class="feature-icon">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h3 class="feature-title">INVERT CASE</h3>
+                <p class="feature-desc">Swap uppercase and lowercase letters</p>
+            </div>
+
+            <div class="feature-card" data-transform="alternatingcase">
+                <div class="feature-icon">
+                    <i class="fas fa-wave-square"></i>
+                </div>
+                <h3 class="feature-title">ALTERNATING CASE</h3>
+                <p class="feature-desc">Alternate between uppercase and lowercase letters</p>
+            </div>
+
+            <div class="feature-card" data-transform="reverse">
+                <div class="feature-icon">
+                    <i class="fas fa-undo-alt"></i>
+                </div>
+                <h3 class="feature-title">REVERSE TEXT</h3>
+                <p class="feature-desc">Reverse the entire text character by character</p>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="about-header" id="aboutHeader">
+                <i class="fas fa-user-circle"></i> ABOUT ME SECTION (HOVER TO ACCESS)
+            </div>
+            <div class="about-content" id="aboutContent">
+                <p>Welcome to Text Transformer Pro! I'm a passionate developer who created this tool to help people transform their text in creative ways.</p>
+                <p>This tool was designed with simplicity and functionality in mind. Whether you're a writer, student, or developer, I hope you find this tool useful for your text manipulation needs.</p>
+                <p>Features include:</p>
+                <ul>
+                    <li>Multiple text transformation options</li>
+                    <li>Real-time character and word counting</li>
+                    <li>Copy to clipboard functionality</li>
+                    <li>Responsive design that works on all devices</li>
+                    <li>Clean, modern interface</li>
+                </ul>
+                <p>Feel free to use this tool as much as you like - it's completely free! If you have any suggestions for new features, I'd love to hear them.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Text Transformer Pro &copy; 2025 | Created with ❤️ for text enthusiasts everywhere</p>
+        </footer>
+
+        <div class="notification" id="notification">
+            Text copied to clipboard!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
